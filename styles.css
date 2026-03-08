@@ -25,9 +25,10 @@ body:before{
 
 /* I took this from example 1 */
 section{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 15px;
-    background-color: #ffe7fa;
+    padding-top: 1px;
+    background-color: #ffe7fc; /*ffe7fa*/
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
     
@@ -42,7 +43,7 @@ section{
 }
 
 hr{
-    color: #ff66ff
+    color: #ffa7ff
 }
 
 h2{
@@ -55,4 +56,48 @@ footer{
     background-color: #ffffff;
     padding: 8px;
     border-radius: 8px;
+}
+
+h3:hover{
+    color: #824366;
+    transform: translateX(5px);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+li:hover{
+    color: #824366;
+    transform: translateX(5px);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.linklist{
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.linklist-item{
+  flex: 1 1;
+  background-color: #e7f2fa;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #b3d7ea;
+}
+.linklist-item:hover{
+    transform: translateY(-5px);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+a{
+    color: #333;
+}
+
+a:hover{
+    color: #824366;
 }
